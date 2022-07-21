@@ -14,7 +14,7 @@ function Navbar({ title }) {
           
       <div className="nav_routes_container">
         <Link to="/">Home</Link>
-        <Link to="/">About</Link>
+        <Link to="/About">About</Link>
      </div>
           
     </nav>

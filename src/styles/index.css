@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
+/* SCSS RGB */
 body {
-  background-color: antiquewhite;
+  background-color: rgb(0, 48, 73);
 }
 
 a {
@@ -14,37 +15,41 @@ a {
 }
 
 .navbar {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 5vh;
 }
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo-container svg,
+.navbar .logo-container a {
+  color: rgb(214, 40, 40);
+  font-size: 30px;
+}
+.navbar .nav_routes_container a {
+  color: rgb(214, 40, 40);
+  font-size: 20px;
+  padding: 5px;
+}
+.navbar .nav_routes_container a:hover {
+  color: white;
+  transition: 0.5s;
+}
 
 main {
   height: 90vh;
-  background-color: aqua;
 }
 
 footer {
+  color: rgb(214, 40, 40);
   height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
 }
-
-svg {
-  width: 50%;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.nav_routes_container a {
-  background-color: rgb(124, 189, 245);
-  padding: 5px;
-  border-radius: 10px;
+footer svg {
+  margin-right: 5px;
 }/*# sourceMappingURL=index.css.map */

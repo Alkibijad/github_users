@@ -1,46 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: antiquewhite;
-  }
-  
-  a {
-    text-decoration: none;
-    margin: 5px;
-  }
-  
-  .navbar {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 5vh;
-  }
-  main {
-    height: 90vh;
-    background-color: aqua;
-  }
-  footer {
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blueviolet;
-  }
-  svg {
-    width: 50%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SCSS RGB */
+$prussian-blue: rgba(0, 48, 73, 1);
+$maximum-red: rgba(214, 40, 40, 1);
+$orange: rgba(247, 127, 0, 1);
+$maximum-yellow-red: rgba(252, 191, 73, 1);
+$lemon-meringue: rgba(234, 226, 183, 1);
+body {
+  background-color: $prussian-blue;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
   .logo-container {
     display: flex;
     align-items: center;
+    svg,
+    a {
+      color: $maximum-red;
+      font-size: 30px;
+    }
   }
-  .nav_routes_container a {
-    background-color: rgb(124, 189, 245);
-    padding: 5px;
-    border-radius: 10px;
+  .nav_routes_container {
+    a {
+      color: $maximum-red;
+      font-size: 20px;
+      padding: 5px;
+    }
+    a:hover {
+      color: white;
+      transition: 0.5s;
+    }
   }
-  
+}
+main {
+  height: 90vh;
+}
+footer {
+  color: $maximum-red;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg{
+    margin-right: 5px;
+    
+  }
+
+}

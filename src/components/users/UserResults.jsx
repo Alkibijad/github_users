@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Spinner from "../layout/Spinner";
+import UserItem from "./UserItem";
 
 function UserResults() {
   const [users, setUsers] = useState([]);
@@ -16,25 +18,18 @@ function UserResults() {
     });
     const data = await response.json();
     setUsers(data);
-    setLoading(false);
+  };
+
+  const showUsers = () => {
+      return users.map((user, index) => <UserItem key={index} user={user} />);
     };
     
-    const showUsers = () => { 
-     return  users.map((user, index) => (
-            <h3 key={index}>{user.login}</h3>
-          ))
-    }
-    const showLoading = () => { 
-        return <p>Loading.....</p>
-    }
 
-  return (
-      <div>
-          
-          {  users ? showUsers(): showLoading()}
-      
-    </div>
-  );
+  const showLoading = () => {
+    return <Spinner />;
+  };
+
+  return <div className="users_container">{users.length ? showUsers() : showLoading()}</div>;
 }
 
 export default UserResults;

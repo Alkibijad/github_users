@@ -76,4 +76,37 @@ footer svg {
   font-size: 20px;
   padding: 10px 0;
   font-weight: 200;
+}
+
+.spinner_container {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner_container img {
+  width: 50%;
+}
+
+.users-card {
+  box-shadow: 1px 1px 1px 1px white;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  float: left;
+  padding: 10px;
+}
+.users-card .image-container {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+}
+.users-card .image-container img {
+  width: 100%;
+}
+.users-card p {
+  color: white;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

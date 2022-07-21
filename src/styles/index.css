@@ -40,15 +40,13 @@ a {
 }
 
 main {
-  height: 90vh;
+  height: 85vh;
 }
 
 footer {
   color: rgb(214, 40, 40);
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 10vh;
+  text-align: center;
 }
 footer svg {
   margin-right: 5px;

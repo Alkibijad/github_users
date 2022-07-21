@@ -57,3 +57,32 @@ footer {
     margin-right: 5px;
   }
 }
+
+//about page
+.about{
+  padding: 10%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  letter-spacing: .5px;
+  
+  h1,p{
+    color: $maximum-red;
+  }
+  a{
+    color: white;
+  }
+  h1{
+    font-weight:800 ;
+    padding: 20px 0;
+    font-size: 40px;
+  }
+  p{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight:200 ;
+
+  }
+}

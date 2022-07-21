@@ -50,4 +50,30 @@ footer {
 }
 footer svg {
   margin-right: 5px;
+}
+
+.about {
+  padding: 10%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  letter-spacing: 0.5px;
+}
+.about h1, .about p {
+  color: rgb(214, 40, 40);
+}
+.about a {
+  color: white;
+}
+.about h1 {
+  font-weight: 800;
+  padding: 20px 0;
+  font-size: 40px;
+}
+.about p {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: 200;
 }/*# sourceMappingURL=index.css.map */

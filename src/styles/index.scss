@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: antiquewhite;
+  }
+  
+  a {
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .navbar {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+  }
+  main {
+    height: 90vh;
+    background-color: aqua;
+  }
+  footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+  }
+  svg {
+    width: 50%;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .nav_routes_container a {
+    background-color: rgb(124, 189, 245);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  

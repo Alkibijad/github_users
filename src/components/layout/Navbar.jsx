@@ -5,10 +5,19 @@ import PropTypes from "prop-types";
 
 function Navbar({ title }) {
   return (
-    <div>
-      <FaGithub />
-      <Link to="/">{title}</Link>
-    </div>
+      <nav className="navbar">
+          
+      <div className="logo-container">
+        <FaGithub />
+        <Link to="/">{title}</Link>
+     </div>
+          
+      <div className="nav_routes_container">
+        <Link to="/">Home</Link>
+        <Link to="/">About</Link>
+     </div>
+          
+    </nav>
   );
 }
 

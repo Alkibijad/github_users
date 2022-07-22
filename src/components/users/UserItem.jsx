@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function UserItem({ user }) {
   console.log(user);
@@ -7,7 +8,13 @@ function UserItem({ user }) {
       <div className="image-container">
         <img src={user.avatar_url} alt="" />
       </div>
-      <p>{user.login}</p>
+      <div>
+        <p>{user.login}</p>
+        {/* <a href={user.html_url} target="blank" rel="noreferrer">
+          Vistim me
+        </a> */}
+        <Link to={ `/users/${user.login}`}>Visit page</Link>
+      </div>
     </div>
   );
 }

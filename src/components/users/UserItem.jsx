@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function UserItem({ user }) {
-  console.log(user);
+
   return (
     <div className="users-card">
       <div className="image-container">

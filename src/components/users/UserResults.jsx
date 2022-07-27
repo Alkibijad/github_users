@@ -1,14 +1,10 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import Spinner from "../layout/Spinner";
 import UserItem from "./UserItem";
 import GithubContext from "../../context/github/GitHubContext";
 
 function UserResults() {
-  const { users, fetchUsers } = useContext(GithubContext);
-
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+  const { users } = useContext(GithubContext);
 
   const showUsers = () => {
     return users.map((user, index) => <UserItem key={index} user={user} />);

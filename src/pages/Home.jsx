@@ -1,9 +1,11 @@
 import React from 'react'
 import UserResults from '../components/users/UserResults'
+import UsersSearch from './UsersSearch'
 
 function Home() {
   return (
-      <div>
+    <div>
+      <UsersSearch/>
        <UserResults/>
       </div>
   )

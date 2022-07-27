@@ -61,7 +61,8 @@ footer svg {
   align-items: start;
   letter-spacing: 0.5px;
 }
-.about h1, .about p {
+.about h1,
+.about p {
   color: rgb(214, 40, 40);
 }
 .about a {
@@ -109,4 +110,31 @@ footer svg {
 .users-card p {
   color: white;
   text-transform: uppercase;
+}
+
+.users_search_container {
+  text-align: center;
+}
+.users_search_container .search_form {
+  padding: 20px 0;
+}
+.users_search_container .search_form .search_input {
+  height: 40px;
+  width: 400px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+.users_search_container .search_form .search_button {
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  background-color: black;
+  color: white;
+}
+.users_search_container .clear_button {
+  font-size: 20px;
+  background-color: transparent;
+  color: antiquewhite;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
